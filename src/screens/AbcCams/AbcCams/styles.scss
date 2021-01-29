@@ -1,0 +1,19 @@
+.main {
+  text-align: center;
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 70vh;
+}
+
+.footer {
+  display: flex;
+  background-color: #282828;
+  color: white;
+  height: 15vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}

@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  flex-direction: fixed;
+  background-color: white;
+  height: 80px;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+}
+
+.navigation__link {
+  flex-grow: 1;
+}
+
+.navigation__link-text {
+  margin-top: 7px;
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1rem;
+  border-bottom: 4px solid white;
+  width: 140px;
+  text-align: center;
+}
+
+.active {
+  color: #ED7533;
+  border-bottom-color: #ED7533;
+}
