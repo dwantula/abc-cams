@@ -13,7 +13,7 @@ function Navigation() {
           </NavLink>
         </li>
         <li className="navigation__link">
-          <NavLink className="navigation__link-text" to="/skicams">
+          <NavLink className="navigation__link-text" to="/ski-cams">
             SkICAMS
           </NavLink>
         </li>

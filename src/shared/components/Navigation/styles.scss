@@ -1,7 +1,9 @@
+@import 'shared/styles/colors.scss';
+
 .navigation {
   display: flex;
   flex-direction: fixed;
-  background-color: white;
+  background-color: $white;
   height: 80px;
 }
 
@@ -22,12 +24,12 @@
   text-transform: uppercase;
   color: black;
   font-size: 1rem;
-  border-bottom: 4px solid white;
+  border-bottom: 4px solid $white;
   width: 140px;
   text-align: center;
 }
 
 .active {
-  color: #ED7533;
-  border-bottom-color: #ED7533;
+  color: $orange;
+  border-bottom-color: $orange;
 }
