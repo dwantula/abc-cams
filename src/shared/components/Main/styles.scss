@@ -1,0 +1,10 @@
+@import 'shared/styles/colors.scss';
+
+.main {
+  text-align: center;
+  background-color: $lightGray;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 70vh;
+}
