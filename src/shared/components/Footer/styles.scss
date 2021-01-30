@@ -4,16 +4,22 @@
   display: flex;
   flex-direction: column;
   background-color: $darkGray;
-  color: white;
-  height: 15vh;
+  color: $lightGray;
+  height: 12vh;
   text-align: center;
   align-items: center;
   justify-content: center;
+  
+}
+
+.footer__text {
   font-size: 0.7rem;
+  font-family: 'Roboto';
+  color: $gray;
 }
 
 .footer__line {
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $gray;
   width: 220px;
-  opacity: 0.6;
+  opacity: 1;
 }

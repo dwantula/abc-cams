@@ -1,9 +1,9 @@
 @import 'shared/styles/colors.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 
 .navigation {
   display: flex;
   background-color: $white;
-  height: 80px;
 }
 
 .navigation__list {
@@ -16,15 +16,14 @@
 }
 
 .navigation__link-text {
-  margin-top: 7px;
-  display: block;
-  padding: 15px 25px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Roboto';
   text-decoration: none;
-  text-transform: uppercase;
-  color: black;
+  color: $darkGray;
   font-size: 1rem;
-  border-bottom: 4px solid $white;
-  width: 140px;
+  border-bottom: 3px solid $white;
+  width: 100px;
   text-align: center;
 }
 

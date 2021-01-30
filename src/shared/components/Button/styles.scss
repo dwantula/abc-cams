@@ -1,0 +1,18 @@
+@import 'shared/styles/colors.scss';
+
+.button {
+  display: flex;
+  background-color: $blue;
+  width: 90px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 165px;
+  color: $white;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  border: none;
+  margin-top: 30px;
+  box-shadow: 1px 2px 1px 0px lightGray;
+  border-radius: 3px;
+}

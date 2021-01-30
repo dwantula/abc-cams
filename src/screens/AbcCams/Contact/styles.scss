@@ -1,0 +1,44 @@
+@import 'shared/styles/colors.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.card__errors {
+  color: red;
+  font-size: 0.7rem;
+}
+
+.card__input {
+  display: flex;
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  outline: 0;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #CCCCCC;
+  font-family: 'Roboto';
+}
+
+.card__textarea {
+  margin-top: 60px;
+  display: flex;
+  width: 250px;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid lightgray;
+  outline: 0;
+  font-size: 1rem;
+  font-family: 'Roboto';
+  resize: none
+}
+
+

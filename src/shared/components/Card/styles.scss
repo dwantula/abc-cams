@@ -1,0 +1,13 @@
+@import 'shared/styles/colors.scss';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  box-shadow: 1px 1px 5px 1px lightgray;
+  width: 450px;
+  height: 400px;
+  margin: auto;
+  background-color: $white;
+  border-radius: 5px;
+}
