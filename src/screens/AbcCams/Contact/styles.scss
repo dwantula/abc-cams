@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 
 
-.card__form {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,33 @@
   outline: 0;
   font-size: 1rem;
   font-family: 'Roboto';
-  resize: none
+  resize: none;
+  top: 0;
+  bottom: 0;
+  
 }
 
 
+.form__placeholder {
+  position: relative;
+}
+
+.form__placeholder-text {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  height: 25px;
+  margin: auto;
+  color: #ccc;
+  font-size: 1rem;
+  font-family: 'Roboto';
+}
+
+.form__placeholder-star {
+  color: red;
+}
+
+// .form__placeholder .card__input:valid + .form__placeholder-text {
+//   display: none;
+// }
