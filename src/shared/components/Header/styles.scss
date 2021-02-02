@@ -3,16 +3,17 @@
 .header {
   display: flex;
   flex-direction: column;
-  height: 20vh;
+  // height: 20vh;
   width: 70%;
   margin-left: 18%;
+  margin-top: 0;
 }
 
 .header__logo {
   display: flex;
   flex-direction: row;
   font-family: 'Roboto';
-  margin-left: 55px;
+  margin-left: 40px;
 }
 
 .header__logo-text {
@@ -24,7 +25,7 @@
   margin-top: -20px;
   font-size: 2rem;
   letter-spacing: 7px;
-  margin-left: 55px;
+  margin-left: 40px;
 }
 
 .header__icon {

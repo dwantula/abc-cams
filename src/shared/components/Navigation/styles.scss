@@ -4,6 +4,8 @@
 .navigation {
   display: flex;
   background-color: $white;
+  // border: 1px solid red;
+  height: 41px;
 }
 
 .navigation__list {
@@ -23,7 +25,7 @@
   color: $darkGray;
   font-size: 1rem;
   border-bottom: 3px solid $white;
-  width: 100px;
+  margin-right: 40px;
   text-align: center;
 }
 

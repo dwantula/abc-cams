@@ -1,0 +1,22 @@
+@import 'shared/styles/colors.scss';
+
+.input__container {
+  position: relative;
+}
+
+.input__placeholder {
+  position: absolute;
+  bottom: 0px;
+  left: 2px;
+  pointer-events: none;
+  font-size: 1rem;
+  color: $lightGrey;
+}
+
+.input__mandatory-mark {
+  color: $red;
+}
+
+input[value]:not([value='']) + .input__placeholder {
+  display: none;
+}
