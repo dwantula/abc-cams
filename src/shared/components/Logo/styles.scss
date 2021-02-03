@@ -1,0 +1,41 @@
+@import 'shared/styles/colors.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin-top: -40px;
+}
+
+.logo__text-row {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  margin-top: -60px;
+  font-weight: 300;
+}
+
+.logo__text {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+
+.header__text {
+  display: flex;
+  font-size: 1.9rem;
+  margin-left: 40px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.logo__icon {
+  display: flex;
+  margin-top: 58px;
+  width: 22px;
+  height: 36px;
+  background-color: $orange;
+}

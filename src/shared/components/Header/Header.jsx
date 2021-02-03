@@ -1,23 +1,17 @@
 import React from 'react';
 
 import Navigation from 'shared/components/Navigation/Navigation';
+import Logo from '../Logo/Logo';
 
 import './styles.scss';
 
 function Header() {
   return (
     <div className="header">
-      <div className="logo">
-        <p className="logo__text">ABC</p>
-        <div className="logo__icon" />
+      <div className="header__positon">
+        <Logo />
+        <Navigation />
       </div>
-      <div className="row">
-        <span>C</span>
-        <span>A</span>
-        <span>M</span>
-        <span>S</span>
-      </div>
-      <Navigation />
     </div>
   );
 }

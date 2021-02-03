@@ -10,6 +10,7 @@
 .navigation__list {
   display: flex;
   list-style: none;
+  margin-left: -45px;
 }
 
 .navigation__link {
@@ -23,8 +24,8 @@
   text-decoration: none;
   color: $darkGray;
   font-size: 0.9rem;
-  border-bottom: 3px solid $white;
-  margin-right: 40px;
+  border-bottom: 2px solid $white;
+  margin-right: 50px;
   text-align: center;
   height: 31px;
 }
