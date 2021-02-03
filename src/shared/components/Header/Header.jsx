@@ -7,11 +7,16 @@ import './styles.scss';
 function Header() {
   return (
     <div className="header">
-      <div className="header__logo">
-        <div className="header__logo-text">ABC</div>
-        <div className="header__icon" />
+      <div className="logo">
+        <p className="logo__text">ABC</p>
+        <div className="logo__icon" />
       </div>
-      <span className="header__text">CAMS</span>
+      <div className="row">
+        <span>C</span>
+        <span>A</span>
+        <span>M</span>
+        <span>S</span>
+      </div>
       <Navigation />
     </div>
   );

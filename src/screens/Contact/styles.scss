@@ -9,39 +9,23 @@
   margin: auto;
 }
 
-.card__errors {
-  color: $red;
-  font-size: 0.7rem;
-  margin-top: -10px;
-}
-
-.card__input {
+.form__textarea {
   display: flex;
   width: 250px;
-  height: 30px;
-  border: none;
-  border-bottom: 1px solid $lightGrey;
-  outline: 0;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: $lightGrey;
-  font-family: 'Roboto';
-}
-
-.card__textarea {
-  margin-top: 60px;
-  display: flex;
-  width: 250px;
-  height: 30px;
   border: none;
   border-bottom: 1px solid $lightGrey;
   outline: 0;
   font-size: 1rem;
   color: $lightGrey;
   font-family: 'Roboto';
-  resize: none
+  resize: none;
 }
 
-.card__textarea::placeholder{
+.form__textarea::placeholder{
+  display: flex;
   color: $lightGrey;
+  text-align: left;
+  transform: translateY(55px);
+  height: 70px;
 }
+

@@ -4,9 +4,20 @@
   position: relative;
 }
 
+.card__input {
+  display: flex;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid $lightGrey;
+  outline: 0;
+  font-size: 1rem;
+  color: $lightGrey;
+  font-family: 'Roboto';
+}
+
 .input__placeholder {
   position: absolute;
-  bottom: 0px;
+  bottom: 30px;
   left: 2px;
   pointer-events: none;
   font-size: 1rem;
@@ -19,4 +30,12 @@
 
 input[value]:not([value='']) + .input__placeholder {
   display: none;
+}
+
+.input__errors {
+  display: block;
+  color: $red;
+  font-size: 0.7rem;
+  justify-content: center;
+  height: 20px;
 }

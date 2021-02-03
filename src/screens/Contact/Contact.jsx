@@ -25,19 +25,15 @@ function Contact() {
     setState((prevState) => ({ ...prevState, [name]: value }));
   }
 
-  function getDate() {
-    if (state.personName === '' || state.personEmail === '') {
-      alert('Name and Email are required.');
-    } else {
-      console.log('wysłane');
-      reset();
-      setState(FORM_DEFAULT_VALUES);
-    }
+  function getData() {
+    console.log('wysłane');
+    reset();
+    setState(FORM_DEFAULT_VALUES);
   }
 
   return (
     <Card>
-      <form onSubmit={handleSubmit(getDate)} className="form">
+      <form onSubmit={handleSubmit(getData)} className="form">
         <Input
           name="personName"
           className="card__input"
@@ -47,7 +43,7 @@ function Contact() {
             required: 'This field is required',
             minLength: {
               value: 2,
-              message: 'This is field required min length of 2',
+              message: 'The minimum field length is 2 letters',
             },
           })}
           placeholder="Name"
@@ -65,18 +61,23 @@ function Contact() {
             required: 'This field is required',
             minLength: {
               value: 2,
-              message: 'This is field required min length of 2',
+              message: 'The minimum field length is 2 letters',
             },
-            pattern: { value: /@/, message: 'Pattern "@" is required' },
+            pattern: {
+              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              message: 'Invalid email address',
+            },
           })}
+          errors={errors['personEmail']}
           placeholder="Email"
           isMandatory={true}
-          errors={errors['personEmail']}
         />
         <textarea
           name="message"
           placeholder="Message"
-          className="card__textarea"
+          rows="4"
+          cols="50"
+          className="form__textarea"
           type="text"
           onChange={handleChange}
           value={state.message}

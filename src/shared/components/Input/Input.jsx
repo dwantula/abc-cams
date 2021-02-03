@@ -28,7 +28,7 @@ const Input = ({
         {isMandatory && <span className="input__mandatory-mark"> *</span>}
       </p>
     )}
-    {!errors.value && <p className="card__errors">{errors.message}</p>}
+    {!errors.value && <p className="input__errors">{errors.message}</p>}
   </div>
 );
 

@@ -1,36 +1,50 @@
 @import 'shared/styles/colors.scss';
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
 .header {
   display: flex;
   flex-direction: column;
-  // height: 20vh;
-  width: 70%;
   margin-left: 18%;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
-.header__logo {
+.logo {
   display: flex;
   flex-direction: row;
-  font-family: 'Roboto';
   margin-left: 40px;
+  margin-top: -40px;
 }
 
-.header__logo-text {
-  font-size: 4rem;
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  margin-top: -60px;
+  margin-left: 40px;
+  font-weight: 200;
+}
+
+.logo__text {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: 'Roboto';
+  font-weight: 300;
 }
 
 .header__text {
   display: flex;
-  margin-top: -20px;
-  font-size: 2rem;
-  letter-spacing: 7px;
+  font-size: 1.9rem;
   margin-left: 40px;
+  font-family: 'Roboto';
+  font-weight: 500;
 }
 
-.header__icon {
-  margin-top: 10px;
-  width: 20px;
-  height: 50px;
+.logo__icon {
+  display: flex;
+  margin-top: 58px;
+  width: 22px;
+  height: 36px;
   background-color: $orange;
 }
