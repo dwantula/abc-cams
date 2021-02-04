@@ -10,10 +10,11 @@
 .navigation__list {
   display: flex;
   list-style: none;
-  margin-left: -40px;
   align-items: flex-end;
-  height: 30px;
-  margin-top: -1px;
+  height: 31px;
+  margin: 0px;
+  position: absolute;
+  padding: 0;
 }
 
 .navigation__link-text {
@@ -22,12 +23,12 @@
   text-decoration: none;
   color: $darkGray;
   font-size: 0.9rem;
-  border-bottom: 2px solid $white;
+  border-bottom: 1px solid $lightGrey;
   margin-right: 60px;
-  height: 30px;
+  height: 31px;
 }
 
 .active {
   color: $orange;
-  border-bottom-color: $orange;
+  border-bottom: 3px solid $orange;
 }
