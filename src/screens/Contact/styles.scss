@@ -1,7 +1,5 @@
 @import 'shared/styles/colors.scss';
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
-
 .form {
   display: flex;
   flex-direction: column;
@@ -26,6 +24,5 @@
   color: $lightGrey;
   text-align: left;
   transform: translateY(55px);
-  height: 70px;
 }
 

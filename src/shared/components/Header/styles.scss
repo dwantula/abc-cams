@@ -4,9 +4,8 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid $lightGrey;
+  padding-left:390px ;
+  height: 13vh;
+  justify-content: space-between;
 }
 
-.header__positon {
-  margin-left: 20%;
-  margin-bottom: 1px;
-}

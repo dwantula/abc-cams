@@ -4,30 +4,25 @@
 .navigation {
   display: flex;
   background-color: $white;
-  height: 50px;
+  height: 4.5vh;
 }
 
 .navigation__list {
   display: flex;
   list-style: none;
-  margin-left: -45px;
-}
+  margin-left: -40px;
+  margin-top: 21px;
 
-.navigation__link {
-  flex-grow: 1;
 }
 
 .navigation__link-text {
   display: flex;
-  justify-content: space-evenly;
   font-family: 'Roboto';
   text-decoration: none;
   color: $darkGray;
   font-size: 0.9rem;
   border-bottom: 2px solid $white;
-  margin-right: 50px;
-  text-align: center;
-  height: 31px;
+  margin-right: 60px;
 }
 
 .active {

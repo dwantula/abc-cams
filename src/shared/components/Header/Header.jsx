@@ -8,10 +8,8 @@ import './styles.scss';
 function Header() {
   return (
     <div className="header">
-      <div className="header__positon">
-        <Logo />
-        <Navigation />
-      </div>
+      <Logo />
+      <Navigation />
     </div>
   );
 }
