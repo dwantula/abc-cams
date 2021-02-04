@@ -1,11 +1,12 @@
 @import 'shared/styles/colors.scss';
+@import 'shared/styles/margins.scss';
 
 .header {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid $lightGrey;
-  padding-left:390px ;
-  height: 13vh;
+  padding: 0 $margin-xxl;
+  height: 15vh;
   justify-content: space-between;
 }
 

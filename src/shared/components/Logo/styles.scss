@@ -5,45 +5,33 @@
 .logo {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  width: 120px;
 }
 
-.logo__text-row {
+.logo__abc-row {
   display: flex;
-  flex-direction: row;
-  font-weight: 300;
+  line-height: 3rem;
   justify-content: space-between;
-  margin-left: 0;
-  width: 82%;
-  margin-top: -55px;
-  width: 110px;
-}
-
-.logo__column {
-  display: flex;
-  flex-direction: row;
-}
-
-.logo__text {
-  display: flex;
-  font-size: 3rem;
-  letter-spacing: 1px;
-  font-family: 'Roboto';
-  font-weight: 300;
-  margin-top: 0;
-}
-
-.header__text {
-  display: flex;
-  font-size: 1.9rem;
-  font-family: 'Roboto';
-  font-weight: 500;
 }
 
 .logo__icon {
   display: flex;
   width: 20px;
-  height: 36px;
   background-color: $orange;
-  margin-top: 10px;
+  margin: 0.2rem 0;
+}
+
+.logo__abc-text {
+  display: flex;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.logo__cams-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 100;
 }
