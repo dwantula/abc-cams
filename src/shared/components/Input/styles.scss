@@ -28,10 +28,6 @@
   color: $red;
 }
 
-input[value]:not([value='']) + .input__placeholder {
-  display: none;
-}
-
 .input__errors {
   display: block;
   color: $red;
