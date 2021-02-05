@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__line" />
-      <p>Powered by ABC</p>
+      <p className="footer__text">Powered by ABC</p>
     </footer>
   );
 }

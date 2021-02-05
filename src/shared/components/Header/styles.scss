@@ -1,0 +1,12 @@
+@import 'shared/styles/colors.scss';
+@import 'shared/styles/margins.scss';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $lightGrey;
+  padding: 0 $margin-xxl;
+  height: 23vh;
+  justify-content: space-between;
+}
+

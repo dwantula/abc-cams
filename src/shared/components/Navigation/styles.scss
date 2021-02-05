@@ -2,33 +2,26 @@
 
 .navigation {
   display: flex;
-  background-color: $white;
-  height: 80px;
+  height: 30px;
 }
 
 .navigation__list {
   display: flex;
   list-style: none;
-}
-
-.navigation__link {
-  flex-grow: 1;
+  margin: 0px;
+  padding: 0;
 }
 
 .navigation__link-text {
-  margin-top: 7px;
-  display: block;
-  padding: 15px 25px;
+  display: flex;
   text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  font-size: 1rem;
-  border-bottom: 4px solid $white;
-  width: 140px;
-  text-align: center;
+  color: $darkGray;
+  font-size: 0.9rem;
+  margin-right: 60px;
+  padding-bottom: 11px;
 }
 
 .active {
   color: $orange;
-  border-bottom-color: $orange;
+  border-bottom: 3px solid $orange;
 }

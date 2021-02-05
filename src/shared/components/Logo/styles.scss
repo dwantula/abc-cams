@@ -1,0 +1,38 @@
+@import 'shared/styles/colors.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  padding-top: 40px;
+}
+
+.logo__abc-row {
+  display: flex;
+  line-height: 3rem;
+  justify-content: space-between;
+}
+
+.logo__icon {
+  display: flex;
+  width: 20px;
+  background-color: $orange;
+  margin: 0.2rem 0;
+}
+
+.logo__abc-text {
+  display: flex;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.logo__cams-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: 100;
+}

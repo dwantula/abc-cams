@@ -11,6 +11,7 @@
         "plugin:prettier/recommended"
     ],
     "parserOptions": {
+        "parser": "babel-eslint",
         "ecmaFeatures": {
             "jsx": true
         },
@@ -21,5 +22,6 @@
         "react"
     ],
     "rules": {
+        "no-shadow":"off"
     }
 }
