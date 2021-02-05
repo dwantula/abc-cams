@@ -1,0 +1,38 @@
+@import 'shared/styles/colors.scss';
+
+.about {
+  display: flex;
+  flex-direction: row;
+  margin: auto auto;
+}
+
+.about__card {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+}
+
+.about__image {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  opacity: 0.9;
+  @media only screen and (max-width: 600px) {
+    height: 300px;
+    margin: auto auto;
+  }
+  @media only screen and (max-width: 1005px) {
+    height: 400px;
+    margin: auto auto;
+  }
+}
+
+.about__title {
+  padding: 10px 20px;
+}
+
+.about__text {
+  font-size: 1rem;
+  padding: 10px 20px;
+  width: 320px;
+}
