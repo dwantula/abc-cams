@@ -3,29 +3,24 @@
 
 .navigation {
   display: flex;
-  justify-content: flex-start;
   height: 30px;
+  width: 100%;
 }
 
 .navigation__list {
   display: flex;
   list-style: none;
-  align-items: flex-end;
-  height: 31px;
   margin: 0px;
-  position: absolute;
   padding: 0;
 }
 
 .navigation__link-text {
   display: flex;
-  font-family: 'Roboto';
   text-decoration: none;
   color: $darkGray;
   font-size: 0.9rem;
-  border-bottom: 1px solid $lightGrey;
   margin-right: 60px;
-  height: 31px;
+  padding-bottom: 11px;
 }
 
 .active {
