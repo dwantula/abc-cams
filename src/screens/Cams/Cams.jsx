@@ -10,7 +10,6 @@ function Cams() {
   return (
     <div>
       <h1>Cams</h1>
-      <img src="https://images-webcams.windy.com/37/1361879037/current/icon/1361879037.jpg" />
     </div>
   );
 }

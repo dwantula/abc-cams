@@ -2,8 +2,8 @@ import apiClient from 'shared/services/apiClient';
 
 export async function fetchCamsList() {
   const response = await apiClient.get(
-    'https://api.windy.com/api/webcams/v2/list/webcam=1361879037?show=webcams:location,image',
-    // 'webcams/v2/list/',
+    '/webcams/v2/list/category=beach/country=IT/orderby=popularity,desc/limit=20',
   );
-  console.log(response);
+  console.log(response.data.result.webcams[1].title);
+  return response.data.result.webcams[1].title;
 }
