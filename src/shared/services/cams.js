@@ -2,8 +2,8 @@ import apiClient from 'shared/services/apiClient';
 
 export async function fetchCamsList() {
   const response = await apiClient.get(
-    '/webcams/v2/list/category=beach/country=IT/orderby=popularity,desc/limit=20',
+    '/webcams/v2/list?show=webcams:image,location;',
   );
-  console.log(response.data.result.webcams[1].title);
-  return response.data.result.webcams[1].title;
+  console.log(response.data.result.webcams);
+  return response.data.result.webcams[0];
 }
