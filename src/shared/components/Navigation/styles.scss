@@ -1,33 +1,27 @@
 @import 'shared/styles/colors.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
 
 .navigation {
   display: flex;
-  background-color: $white;
+  height: 30px;
 }
 
 .navigation__list {
   display: flex;
   list-style: none;
-}
-
-.navigation__link {
-  flex-grow: 1;
+  margin: 0px;
+  padding: 0;
 }
 
 .navigation__link-text {
   display: flex;
-  justify-content: space-evenly;
-  font-family: 'Roboto';
   text-decoration: none;
   color: $darkGray;
-  font-size: 1rem;
-  border-bottom: 3px solid $white;
-  width: 100px;
-  text-align: center;
+  font-size: 0.9rem;
+  margin-right: 60px;
+  padding-bottom: 11px;
 }
 
 .active {
   color: $orange;
-  border-bottom-color: $orange;
+  border-bottom: 3px solid $orange;
 }

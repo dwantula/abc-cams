@@ -5,11 +5,10 @@
   flex-direction: column;
   background-color: $darkGray;
   color: $lightGray;
-  height: 12vh;
+  height: 10vh;
   text-align: center;
   align-items: center;
   justify-content: center;
-  
 }
 
 .footer__text {
@@ -20,6 +19,6 @@
 
 .footer__line {
   border-bottom: 1px solid $gray;
-  width: 220px;
-  opacity: 1;
+  width: 240px;
+  opacity: 0.3;
 }

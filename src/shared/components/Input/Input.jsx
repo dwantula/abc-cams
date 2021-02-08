@@ -4,23 +4,32 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 const Input = ({
-  value,
   className,
   register,
   placeholder,
   type,
   name,
   onChange,
+  isMandatory,
+  value,
+  errors,
 }) => (
-  <input
-    placeholder={placeholder}
-    name={name}
-    className={className}
-    ref={register}
-    onChange={onChange}
-    type={type}
-    value={value}
-  />
+  <div className="input__container">
+    <input
+      name={name}
+      className={className}
+      ref={register}
+      onChange={onChange}
+      type={type}
+    />
+    {!value && (
+      <p className="input__placeholder">
+        {placeholder}
+        {isMandatory && <span className="input__mandatory-mark"> *</span>}
+      </p>
+    )}
+    {!errors.value && <p className="input__errors">{errors.message}</p>}
+  </div>
 );
 
 Input.propTypes = {
@@ -29,16 +38,20 @@ Input.propTypes = {
   name: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   type: PropTypes.string.isRequired,
-  value: PropTypes.string,
   className: PropTypes.string,
+  isMandatory: PropTypes.bool,
+  value: PropTypes.string,
+  errors: PropTypes.object.isRequired,
 };
 
 Input.defaultProps = {
   register: () => {},
   placeholder: '',
   name: '',
-  value: '',
   className: '',
+  isMandatory: false,
+  value: '',
+  errors: {},
 };
 
 export default Input;
