@@ -1,0 +1,23 @@
+@import 'shared/styles/margins.scss';
+
+.cams {
+  display: flex;
+  flex-direction: column;
+  padding: 40px $margin-xxl;
+}
+
+.cams__select {
+  display: flex;
+  flex-direction: row;
+  margin: auto auto;
+  padding-left: 35px;
+}
+
+.cams__image {
+  object-fit: cover;
+  width: 440px;
+  height: 400px;
+  padding-top: 30px;
+  border-radius: 5px;
+  margin: auto auto;
+}

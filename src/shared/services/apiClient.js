@@ -5,7 +5,6 @@ const apiClient = axios.create({
 });
 
 apiClient.interceptors.request.use((config) => {
-  console.log(config);
   config.headers['x-windy-key'] = process.env.REACT_APP_API_KEY;
   return config;
 });
