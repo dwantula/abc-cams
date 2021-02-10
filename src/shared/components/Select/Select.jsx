@@ -4,19 +4,17 @@ import PropTypes from 'prop-types';
 import './styles.scss';
 
 const Select = ({ name, options, value, onChange, placeholder }) => {
-  return options ? (
+  return (
     <select className="select" name={name} value={value} onChange={onChange}>
-      <option hidden disabled value="">
+      <option className="select__option" hidden disabled value="">
         {placeholder}
       </option>
       {options.map(({ value, label }) => (
-        <option key={value} value={value}>
+        <option className="select__option" key={value} value={value}>
           {label}
         </option>
       ))}
     </select>
-  ) : (
-    <p></p>
   );
 };
 

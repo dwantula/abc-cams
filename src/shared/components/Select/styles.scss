@@ -1,8 +1,17 @@
+@import 'shared/styles/colors.scss';
+
 .select {
   display: flex;
-  width: 200px;
+  width: 400px;
+  border: 1px solid $darkGrey;
   height: 35px;
   cursor: pointer;
   outline: 0;
   margin-right: 40px;
+  font-family: 'Roboto',sans-serif;
+}
+
+.select__option {
+  font-family: 'Roboto',sans-serif;
+  width: 300px;
 }

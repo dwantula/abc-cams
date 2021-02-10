@@ -1,4 +1,5 @@
 import apiClient from 'shared/services/apiClient';
+import { sort } from 'shared/utills/sort';
 
 export async function fetchCamsList() {
   const response = await apiClient.get(
@@ -7,23 +8,9 @@ export async function fetchCamsList() {
   return response.data.result.webcams;
 }
 
-function sort(array, key) {
-  return array.sort((a, b) => {
-    const x = a[key];
-    const y = b[key];
-    if (x < y) {
-      return -1;
-    }
-    if (x > y) {
-      return 1;
-    }
-    return 0;
-  });
-}
-
 export async function fetchCountryList() {
   const response = await apiClient.get('list?show=countries');
-  const countries = response.data.result.countries;
+  const { countries } = response.data.result;
   const countriesSorted = sort(countries, 'name');
   return countriesSorted;
 }
