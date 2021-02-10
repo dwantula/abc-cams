@@ -2,12 +2,16 @@
 
 .spinner {
   display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.spinner__container {
+  display: flex;
   width: 40px;
   height: 40px;
   background-color: $orange;
   animation: rotateplane 1.2s infinite ease-in-out;
-  align-items: center;
-  justify-content: center;
 }
 
 @keyframes rotateplane {

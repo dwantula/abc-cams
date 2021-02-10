@@ -16,8 +16,10 @@ function Cams() {
 
   useEffect(() => {
     async function getCountry() {
+      setLoading(true);
       const countryList = await fetchCountryList();
       setCountries(countryList);
+      setLoading((prevState) => !prevState);
     }
     getCountry();
     setChosenCityId('');
@@ -25,13 +27,13 @@ function Cams() {
 
   useEffect(() => {
     async function getCity() {
+      setLoading(true);
       const citiesList = await fetchCityList(chosenCountry);
       setCities(citiesList);
+      setLoading((prevState) => !prevState);
     }
     if (chosenCountry) {
-      setLoading(true);
       getCity();
-      setLoading(false);
     }
   }, [chosenCountry]);
 
@@ -45,16 +47,20 @@ function Cams() {
   return (
     <div className="cams">
       <div className="cams__select">
-        <Select
-          placeholder="Choose country"
-          value={chosenCountry}
-          name="country"
-          options={countries.map(({ id, name }) => ({
-            label: name,
-            value: id,
-          }))}
-          onChange={(event) => setChosenCountry(event.target.value)}
-        />
+        {loading === true ? (
+          <Spinner />
+        ) : (
+          <Select
+            placeholder="Choose country"
+            value={chosenCountry}
+            name="country"
+            options={countries.map(({ id, name }) => ({
+              label: name,
+              value: id,
+            }))}
+            onChange={(event) => setChosenCountry(event.target.value)}
+          />
+        )}
         {loading === true ? (
           <Spinner />
         ) : (
@@ -73,8 +79,8 @@ function Cams() {
         )}
       </div>
       <div className="cams__image">
-        {loading === true ? (
-          <Spinner />
+        {chosenCityId === '' ? (
+          <p></p>
         ) : (
           chosenCityId && (
             <img className="cams__img" src={chosenCityCamUrl} alt="picture" />
