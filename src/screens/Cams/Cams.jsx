@@ -30,7 +30,7 @@ function Cams() {
       setLoading(true);
       const citiesList = await fetchCityList(chosenCountry);
       setCities(citiesList);
-      setLoading((prevState) => !prevState);
+      setLoading((prevState) => prevState);
     }
     if (chosenCountry) {
       getCity();
@@ -47,7 +47,7 @@ function Cams() {
   return (
     <div className="cams">
       <div className="cams__select">
-        {loading === true ? (
+        {loading === true && chosenCountry === '' ? (
           <Spinner />
         ) : (
           <Select
@@ -61,7 +61,7 @@ function Cams() {
             onChange={(event) => setChosenCountry(event.target.value)}
           />
         )}
-        {loading === true ? (
+        {loading === true && chosenCountry ? (
           <Spinner />
         ) : (
           chosenCountry && (
@@ -79,12 +79,8 @@ function Cams() {
         )}
       </div>
       <div className="cams__image">
-        {chosenCityId === '' ? (
-          <p></p>
-        ) : (
-          chosenCityId && (
-            <img className="cams__img" src={chosenCityCamUrl} alt="picture" />
-          )
+        {chosenCityId && (
+          <img className="cams__img" src={chosenCityCamUrl} alt="picture" />
         )}
       </div>
     </div>
