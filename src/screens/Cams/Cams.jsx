@@ -19,7 +19,7 @@ function Cams() {
       setLoading(true);
       const countryList = await fetchCountryList();
       setCountries(countryList);
-      setLoading((prevState) => !prevState);
+      setLoading(false);
     }
     getCountry();
     setChosenCityId('');
@@ -30,7 +30,7 @@ function Cams() {
       setLoading(true);
       const citiesList = await fetchCityList(chosenCountry);
       setCities(citiesList);
-      setLoading((prevState) => prevState);
+      setLoading(false);
     }
     if (chosenCountry) {
       getCity();
@@ -47,37 +47,31 @@ function Cams() {
   return (
     <div className="cams">
       <div className="cams__select">
-        {loading === true && chosenCountry === '' ? (
-          <Spinner />
-        ) : (
+        <Select
+          placeholder="Choose country"
+          value={chosenCountry}
+          name="country"
+          options={countries.map(({ id, name }) => ({
+            label: name,
+            value: id,
+          }))}
+          onChange={(event) => setChosenCountry(event.target.value)}
+        />
+
+        {chosenCountry && (
           <Select
-            placeholder="Choose country"
-            value={chosenCountry}
-            name="country"
-            options={countries.map(({ id, name }) => ({
-              label: name,
+            placeholder="Choose city"
+            value={chosenCityId}
+            name="city"
+            options={cities.map(({ id, title }) => ({
+              label: title,
               value: id,
             }))}
-            onChange={(event) => setChosenCountry(event.target.value)}
+            onChange={handleCityChange}
           />
         )}
-        {loading === true && chosenCountry ? (
-          <Spinner />
-        ) : (
-          chosenCountry && (
-            <Select
-              placeholder="Choose city"
-              value={chosenCityId}
-              name="city"
-              options={cities.map(({ id, title }) => ({
-                label: title,
-                value: id,
-              }))}
-              onChange={handleCityChange}
-            />
-          )
-        )}
       </div>
+      {loading && <Spinner />}
       <div className="cams__image">
         {chosenCityId && (
           <img className="cams__img" src={chosenCityCamUrl} alt="picture" />
