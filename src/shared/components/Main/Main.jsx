@@ -11,9 +11,9 @@ function Main() {
   return (
     <div className="main">
       <Switch>
-        <Route path="/" exact component={AboutUs} />
-        <Route path="/cams" component={Cams} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/abc-cams/" exact component={AboutUs} />
+        <Route path="/abc-cams/cams" component={Cams} />
+        <Route path="/abc-cams/contact" component={Contact} />
         <Route component={() => <h3>Strona nie istnieje</h3>} />
       </Switch>
     </div>
