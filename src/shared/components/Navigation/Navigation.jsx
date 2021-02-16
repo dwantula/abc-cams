@@ -8,17 +8,17 @@ function Navigation() {
     <nav className="navigation">
       <ul className="navigation__list">
         <li className="navigation__link">
-          <NavLink className="navigation__link-text" to="/" exact>
+          <NavLink className="navigation__link-text" to="/abc-cams/" exact>
             ABOUT US
           </NavLink>
         </li>
         <li className="navigation__link">
-          <NavLink className="navigation__link-text" to="/cams">
+          <NavLink className="navigation__link-text" to="/abc-cams/cams">
             CAMS
           </NavLink>
         </li>
         <li className="navigation__link">
-          <NavLink className="navigation__link-text" to="/contact">
+          <NavLink className="navigation__link-text" to="/abc-cams/contact">
             CONTACT
           </NavLink>
         </li>
