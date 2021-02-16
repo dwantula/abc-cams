@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/abc-cams/static/css/main.85b2caf8.chunk.css",
-    "main.js": "/abc-cams/static/js/main.95779755.chunk.js",
-    "main.js.map": "/abc-cams/static/js/main.95779755.chunk.js.map",
-    "runtime-main.js": "/abc-cams/static/js/runtime-main.81fa6297.js",
-    "runtime-main.js.map": "/abc-cams/static/js/runtime-main.81fa6297.js.map",
-    "static/js/2.ea805012.chunk.js": "/abc-cams/static/js/2.ea805012.chunk.js",
-    "static/js/2.ea805012.chunk.js.map": "/abc-cams/static/js/2.ea805012.chunk.js.map",
-    "index.html": "/abc-cams/index.html",
-    "static/css/main.85b2caf8.chunk.css.map": "/abc-cams/static/css/main.85b2caf8.chunk.css.map",
-    "static/js/2.ea805012.chunk.js.LICENSE.txt": "/abc-cams/static/js/2.ea805012.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.85b2caf8.chunk.css",
+    "main.js": "/static/js/main.95779755.chunk.js",
+    "main.js.map": "/static/js/main.95779755.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ab153086.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ab153086.js.map",
+    "static/js/2.ea805012.chunk.js": "/static/js/2.ea805012.chunk.js",
+    "static/js/2.ea805012.chunk.js.map": "/static/js/2.ea805012.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.85b2caf8.chunk.css.map": "/static/css/main.85b2caf8.chunk.css.map",
+    "static/js/2.ea805012.chunk.js.LICENSE.txt": "/static/js/2.ea805012.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.81fa6297.js",
+    "static/js/runtime-main.ab153086.js",
     "static/js/2.ea805012.chunk.js",
     "static/css/main.85b2caf8.chunk.css",
     "static/js/main.95779755.chunk.js"
